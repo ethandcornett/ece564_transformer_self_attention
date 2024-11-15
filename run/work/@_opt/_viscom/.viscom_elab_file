@@ -1,0 +1,1 @@
+/mnt/apps/public/COE/mg_apps/questa2024.2/questasim/linux/VisualizerRls/bin/viscom -nolock -quiet -jmem_size 590016 work.tb_top -quiet -auto_acc_if_foreign -work work +acc -allow_unnamed -o _opt -id 1-000ae431a4f1-67376f04-6c3a7-35a73 +__design_bin_path+/mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/run +__betafsm

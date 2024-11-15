@@ -1,0 +1,188 @@
+#------------------------------------------------------------
+#
+# Basic Synthesis Script (TCL format)
+#                                  
+# Revision History                
+#   1/15/03  : Author Shane T. Gehring - from class example
+#   2/09/07  : Author Zhengtao Yu      - from class example
+#   12/14/07 : Author Ravi Jenkal      - updated to 180 nm & tcl
+#
+#------------------------------------------------------------
+#---------------------------------------------------------
+# Read in Verilog file and map (synthesize) onto a generic
+# library.
+# MAKE SURE THAT YOU CORRECT ALL WARNINGS THAT APPEAR
+# during the execution of the read command are fixed 
+# or understood to have no impact.
+# ALSO CHECK your latch/flip-flop list for unintended 
+# latches                                            
+#---------------------------------------------------------
+read_verilog -rtl $::env(RTL_FILES)
+Error: Required argument 'file_list' was not found (CMD-007)
+read_sverilog -rtl $::env(RTL_SV_FILES)
+Loading db file '/mnt/coe/workspace/ece/ece720-common/tech/nangate/NangateOpenCellLibrary_PDKv1_2_v2008_10/liberty/520/NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm.db'
+Loading db file '/mnt/apps/public/COE/synopsys_apps/syn/T-2022.03-SP4/libraries/syn/dw_foundation.sldb'
+Loading db file '/mnt/apps/public/COE/synopsys_apps/syn/T-2022.03-SP4/libraries/syn/gtech.db'
+Loading db file '/mnt/apps/public/COE/synopsys_apps/syn/T-2022.03-SP4/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm'
+  Loading link library 'gtech'
+Loading sverilog file '/mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/rtl/dut.sv'
+Running PRESTO HDLC
+Compiling source file /mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/rtl/dut.sv
+Opening include file /mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/rtl/common.vh
+
+Statistics for case statements in always block at line 102 in file
+	'/mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/rtl/dut.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           103            |    auto/auto     |
+===============================================
+Warning: Could not open default SVF file /mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/synthesis/svf/default.svf for writing.
+
+Inferred memory devices in process
+	in routine MyDesign line 409 in file
+		'/mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  Current_State_reg  | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 419 in file
+		'/mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/rtl/dut.sv'.
+====================================================================================
+|      Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================
+|     score_offset_reg     | Flip-flop |  14   |  Y  | N  | N  | N  | N  | N  | N  |
+|    matrix_A_rows_reg     | Flip-flop |  14   |  Y  | N  | N  | N  | N  | N  | N  |
+| matrix_A_cols_B_rows_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|    matrix_B_cols_reg     | Flip-flop |  14   |  Y  | N  | N  | N  | N  | N  | N  |
+|    weight_offset_reg     | Flip-flop |  14   |  Y  | N  | N  | N  | N  | N  | N  |
+|    result_offset_reg     | Flip-flop |  14   |  Y  | N  | N  | N  | N  | N  | N  |
+====================================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 458 in file
+		'/mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/rtl/dut.sv'.
+=========================================================================================
+|         Register Name         |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=========================================================================================
+|   updated_input_offset_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   updated_weight_offset_reg   | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   updated_result_offset_reg   | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+| updated_scratchpad_offset_reg | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+=========================================================================================
+
+Statistics for case statements in always block at line 660 in file
+	'/mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/rtl/dut.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           661            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine HW6 line 651 in file
+		'/mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/rtl/dut.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  Current_State_reg  | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine HW6 line 752 in file
+		'/mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/rtl/dut.sv'.
+=====================================================================================
+|       Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=====================================================================================
+| scratchpad_write_addr_reg | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   SRAM_C_write_addr_reg   | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|      row_counter_reg      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+=====================================================================================
+
+Inferred memory devices in process
+	in routine HW6 line 769 in file
+		'/mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/rtl/dut.sv'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+|  A_Offset_counter_reg   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|   Current_C_count_reg   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| Current_col_count_A_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|      A_Offset_reg       | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|  SRAM_A_read_addr_reg   | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|    row_complete_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===================================================================================
+
+Inferred memory devices in process
+	in routine HW6 line 830 in file
+		'/mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/rtl/dut.sv'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+|  SRAM_B_read_addr_reg   | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+| Current_col_count_B_reg | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+===================================================================================
+
+Inferred memory devices in process
+	in routine HW6 line 852 in file
+		'/mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/rtl/dut.sv'.
+=====================================================================================
+|       Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=====================================================================================
+| all_elements_computed_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+=====================================================================================
+
+Inferred memory devices in process
+	in routine HW6 line 861 in file
+		'/mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/rtl/dut.sv'.
+======================================================================================
+|       Register Name        |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+======================================================================================
+|    metadata_B_cols_reg     | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|    Max_col_count_A_reg     | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|     Total_C_count_reg      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|     B_num_of_vals_reg      | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+| metadata_A_cols_B_rows_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+======================================================================================
+
+Inferred memory devices in process
+	in routine HW6 line 911 in file
+		'/mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/rtl/dut.sv'.
+=========================================================================================
+|         Register Name         |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=========================================================================================
+| transpose_complete_offset_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| SRAM_Read_transpose_addr_reg  | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   transpose_row_counter_reg   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|     transpose_offset_reg      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+=========================================================================================
+
+Inferred memory devices in process
+	in routine HW6 line 932 in file
+		'/mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/rtl/dut.sv'.
+===========================================================================================
+|          Register Name          |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================================
+| write_enable_scratchpad_reg_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      set_write_enable_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===========================================================================================
+
+Inferred memory devices in process
+	in routine HW6 line 943 in file
+		'/mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/rtl/dut.sv'.
+========================================================================================
+|        Register Name         |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+========================================================================================
+| reset_accumulator_buffer_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       accum_result_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+========================================================================================
+Warning:  /mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/rtl/dut.sv:741: Netlist for always_comb block is empty. (ELAB-982)
+Presto compilation completed successfully.
+Current design is now '/mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/rtl/MyDesign.db:MyDesign'
+Loaded 3 designs.
+Current design is 'MyDesign'.
+MyDesign HW6 int_accumulate_multiplication

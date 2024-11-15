@@ -1,0 +1,159 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/mnt/ncsudrive/e/edcornet/ECE564/Project/ece564_transformer_self_attention/run
+T_opt
+!s110 1731686150
+V=zd400d9jMzRK;OJmM23E2
+04 6 4 work tb_top fast 0
+=1-000ae431a4f1-67376f04-6c3a7-35a73
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OE;O;2024.2;79
+vHW6
+Z3 2../testbench/testbench.sv|../testbench/sram.sv|../rtl/dut.sv
+Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z5 !s110 1731686141
+!i10b 1
+!s100 b;8kh3jVKaCO]ik1Bhh>[0
+I:7zMe>C67<L]Wja;M<FzJ3
+S1
+R1
+Z6 w1731686101
+Z7 8../rtl/dut.sv
+Z8 F../rtl/dut.sv
+!i122 1
+L0 543 450
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OE;L;2024.2;79
+r1
+!s85 0
+31
+Z11 !s108 1731686140.000000
+Z12 !s107 ../rtl/common/common.vh|../rtl/dut.sv|../testbench/sram.sv|../testbench/testbench.sv|
+Z13 !s90 -sv|+incdir+../rtl/common|../testbench/testbench.sv|../testbench/sram.sv|../rtl/dut.sv|
+!i113 0
+Z14 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z15 !s92 -sv +incdir+../rtl/common -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@h@w6
+vint_accumulate_multiplication
+R3
+R4
+R5
+!i10b 1
+!s100 2G?<TU<YFC=648Ujb?DMG0
+I=U`9L=QZf:c6@TGlZXk012
+S1
+R1
+R6
+R7
+R8
+!i122 1
+L0 995 10
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R2
+vMyDesign
+R3
+R4
+R5
+!i10b 1
+!s100 ncfJEH;Z7JoF]S6`6Ld@]2
+IYG[U^zXLAFQPnOGz2iEJ40
+S1
+R1
+R6
+R7
+R8
+!i122 1
+L0 6 536
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R2
+n@my@design
+vsram
+R3
+R4
+R5
+!i10b 1
+!s100 HZj>F?X4LWDI6ePnOV_:42
+I;^>J[_:OnD2[Q4VoXOG6;2
+S1
+R1
+w1728929478
+8../testbench/sram.sv
+F../testbench/sram.sv
+!i122 1
+L0 5 105
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R2
+vtb_top
+R3
+R4
+R5
+!i10b 1
+!s100 2kXB^JhC42J]lgl3ehVgN3
+I?[n43^=nS]`8oC7^`>7BL0
+S1
+R1
+w1731096410
+8../testbench/testbench.sv
+F../testbench/testbench.sv
+!i122 1
+L0 21 392
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R2
